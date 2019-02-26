@@ -31,9 +31,10 @@ public class JavaApplication172 {
         
         
         Glass[] bunch = new Glass[10];
-        for (int i = 0; i < bunch.length; i++) {
+        for (int i = 0; i < bunch.length - 1; i++) {
             bunch[i] = new Glass(rnd.nextDouble() + 0.1);     // max_volume 
         }
+        bunch[9] = thermos1;
         System.out.println(Arrays.toString(bunch));
         for (int i = 0; i < 3; i++) {
             int a = rnd.nextInt(10 - i);
