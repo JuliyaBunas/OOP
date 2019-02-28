@@ -142,6 +142,7 @@ public class Glass {
     }
 }
 
+
 package com.company;
 
 public class Thermos extends Glass {
