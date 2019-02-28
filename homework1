@@ -143,20 +143,24 @@ public class Glass {
     }
 }
 
-
 package com.company;
 
 public class Thermos extends Glass {
 
-    private int temperature = 5;
+    private int temperature = 15;
 
     public int getTemperature() {
         return temperature;
     }
 
+    Thermos() {
+        System.out.println("Thermos created");
+
+    }
+
     public void add(double a, int b) {
         this.add(a);
-        temperature = (temperature + b) / 2;
+        temperature = b - 3;
     }
 
     public void updateTemperature(int time) {
@@ -166,8 +170,7 @@ public class Thermos extends Glass {
         }
     }
 
-
-     public void transfusion(double a, Thermos b) {
+    public void transfusion(double a, Thermos b) {
         super.transfusion(a, b);
         b.temperature = (temperature + b.getTemperature()) / 2;
     }
