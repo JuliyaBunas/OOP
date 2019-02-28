@@ -69,7 +69,7 @@ import java.util.Random;
 public class Glass {
 
 
-    private double max_volume = 0.2;
+    private double max_volume = 0.5;
     private double volume_floid = 0;
 
     public double getMax_volume() {
@@ -135,8 +135,7 @@ public class Glass {
             a = volume_floid;
         }
         if (a > (b.max_volume - b.volume_floid)) {
-            double c = b.max_volume - b.volume_floid;
-            a = c;
+            a = b.max_volume - b.volume_floid;
         }
         take(a);
         b.add(a);
