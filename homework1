@@ -45,6 +45,7 @@ public class Main {
         bunch[0].sortGlass(bunch);
         System.out.println(Arrays.toString(bunch));
 
+        System.out.println(bunch[7] + " " + bunch[8]);
         bunch[7].transfusion(0.5, bunch[8]);
         System.out.println(bunch[7] + " " + bunch[8]);
 
