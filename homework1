@@ -45,10 +45,10 @@ public class Main {
         bunch[0].sortGlass(bunch);
         System.out.println(Arrays.toString(bunch));
 
-        bunch[7].transfusion(0.12, bunch[8]);
+        bunch[7].transfusion(0.5, bunch[8]);
         System.out.println(bunch[7] + " " + bunch[8]);
-        
-         Thermos thermos_2 = new Thermos();
+
+        Thermos thermos_2 = new Thermos();
         thermos_2.add(0.03, 35);
         Thermos thermos_3 = new Thermos();
         thermos_3.add(0.03, 29);
@@ -59,7 +59,6 @@ public class Main {
         System.out.println(thermos_3.getTemperature());
     }
 }
-
 
 
 package com.company;
