@@ -167,8 +167,8 @@ public class Thermos extends Glass {
     }
 
 
-    @Override
-    public void transfusion(double a, Glass b) {
+     public void transfusion(double a, Thermos b) {
         super.transfusion(a, b);
+        b.temperature = (temperature + b.getTemperature()) / 2;
     }
 }
