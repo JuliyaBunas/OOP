@@ -160,7 +160,7 @@ public class Thermos extends Glass {
 
     public void add(double a, int b) {
         this.add(a);
-        temperature = b - 3;
+        temperature = b;
     }
 
     public void updateTemperature(int time) {
@@ -170,8 +170,8 @@ public class Thermos extends Glass {
         }
     }
 
-    public void transfusion(double a, Thermos b) {   // метод переливания для термосов
+    public void transfusion(double a, Thermos b) {  //  t = (t1·m1+t2·m2) / (m1+m2)формула теплового баланса
         super.transfusion(a, b);
-        b.temperature = (temperature + b.getTemperature()) / 2;
+        b.temperature = (int) (((double) temperature * a + (double) b.getTemperature() * b.getVolume_floid()) / (a + b.getVolume_floid()));
     }
 }
