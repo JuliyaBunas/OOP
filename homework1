@@ -130,7 +130,7 @@ public class Glass {
         }
     }
 
-    public void transfusion(double a, Glass b) {
+    public void transfusion(double a, Glass b) {  // метод переливания для стаканов
         if (a > volume_floid) {
             a = volume_floid;
         }
@@ -170,7 +170,7 @@ public class Thermos extends Glass {
         }
     }
 
-    public void transfusion(double a, Thermos b) {
+    public void transfusion(double a, Thermos b) {   // метод переливания для термосов
         super.transfusion(a, b);
         b.temperature = (temperature + b.getTemperature()) / 2;
     }
