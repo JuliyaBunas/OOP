@@ -1,0 +1,66 @@
+ @Override
+	public int hashCode() {
+		final int prime = 37;
+		int result = 1;
+		result = (int) (prime * this.max_volume);
+		result *= prime + this.volume_floid;
+		return result;
+	}
+    
+        @Override
+        public boolean equals(Object ob){
+        if(ob == null){
+        return false;
+        }
+        if(this.getClass() != ob.getClass()){
+        return  false;}
+        Glass g = (Glass)ob;
+        if(g.getMax_volume() != this.getMax_volume()){
+            return false;
+        }
+         if(g.getVolume_floid() != this.getVolume_floid()){
+            return false;
+        }
+        return true;
+        }
+        
+        
+        package javaapplication115;
+
+/**
+ *
+ * @author PC
+ */
+public class JavaApplication115 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Integer i = 12;
+        error(i);
+    
+        error(i);
+        int a = 1;
+        error(a);
+        
+        String s = new String();
+        s = "asd";
+        error(s);
+        
+        Object obj = new Integer(5);
+        error(obj);
+    }
+    
+    static void error(int a){
+        System.out.println(a + " int");
+    }
+    
+    static void error(Integer a){
+        System.out.println(a+" integer");
+    }
+    
+    static void error(Object a){
+        System.out.println(a+" object");
+    }
+}
