@@ -1,0 +1,18 @@
+package com.company;
+
+public class Main {
+
+    static void universal_sum(String a, String b) {
+        double d = Double.parseDouble(a);
+        double f = Double.parseDouble(b);
+        double sum = d + f;
+        System.out.println(sum);
+    }
+
+    public static void main(String[] args) {
+
+        String a = new String("0.5");
+        String b = new String("2");
+        universal_sum(a, b);
+    }
+}
