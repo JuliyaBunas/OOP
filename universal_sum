@@ -3,8 +3,8 @@ package com.company;
 public class Main {
 
     static double universal_sum(Number a, Number b) {
-        double f = Double.parseDouble(a.toString());
-        double g = Double.parseDouble(b.toString());
+        double f = Double.parseDouble(a.toString()); //по-другому вытянуть значение не получилось?
+        double g = Double.parseDouble(b.toString()); //не было метода doubleValue()?
         return (f + g);
     }
 
