@@ -2,17 +2,18 @@ package com.company;
 
 public class Main {
 
-    static void universal_sum(String a, String b) {
-        double d = Double.parseDouble(a);
-        double f = Double.parseDouble(b);
-        double sum = d + f;
-        System.out.println(sum);
+    static double universal_sum(Number a, Number b) {
+        double f = Double.parseDouble(a.toString());
+        double g = Double.parseDouble(b.toString());
+        return (f + g);
     }
 
     public static void main(String[] args) {
-    
-        String a = Double.toString(0.5);
-        String b = Integer.toString(7);
+
+        Number a = 15;
+        Number b = 25.45;
         universal_sum(a, b);
+        System.out.println(universal_sum(a, b));
+
     }
 }
